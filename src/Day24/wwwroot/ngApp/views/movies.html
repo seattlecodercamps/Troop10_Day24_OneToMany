@@ -1,0 +1,9 @@
+﻿<h1>{{controller.categoryWithMovies.name}}</h1>
+<p>
+    <a href="/movies/create/{{controller.categoryId}}">Create a new movie...</a>
+</p>
+<ul>
+    <li ng-repeat="movie in controller.categoryWithMovies.movies">
+        {{movie.title}} - {{movie.director}}
+    </li>
+</ul>

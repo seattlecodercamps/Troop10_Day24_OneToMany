@@ -1,0 +1,20 @@
+﻿<h1>Create new Movie</h1>
+
+<form ng-submit="controller.saveMovie()">
+
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" ng-model="controller.movieToCreate.title" />
+    </div>
+
+    <div class="form-group">
+        <label>Director</label>
+        <input type="text" class="form-control" ng-model="controller.movieToCreate.director" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="save" />
+    </div>
+
+
+</form>

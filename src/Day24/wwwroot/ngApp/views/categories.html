@@ -1,0 +1,9 @@
+﻿<h1>Movie Categories Page</h1>
+<p>
+    <a href="/categories/create">Create a new category...</a>
+</p>
+<ul>
+    <li ng-repeat="category in controller.categories">
+        <a href="/movies/{{category.id}}">{{category.name}}</a>
+    </li>
+</ul>
